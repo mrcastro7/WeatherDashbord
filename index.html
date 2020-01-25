@@ -2,26 +2,21 @@
 <html>
 
 <head>
-    <title>Weather TRENDz</title>
+    <title>Weather Dashbord</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="container-fluid" id="header-div">
-        <h1>Weather TRENDz</h1>
-    </div>
-
     <!-- Main container -->
     <div class="container-fluid" id="main-container">
-        <div class="row">
+        <!-- <div class="row"> -->
             <!-- Search for City section -->
-            <div class="col-3" id="search-div">
-                <h4>Search for a City:</h4>
+            <div class="col-5" id="search-div">
+                <h4>What's The Weather In Your City:</h4>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Enter a City" id="txtCity">
                     <div class="input-group-append">
@@ -29,12 +24,13 @@
                                 class="fa fa-search"></i></button>
                     </div>
                 </div>
-                <div class="btn-group-vertical" id="cityBtnGroup-div">
+                <div class="btn-group-horizontal" id="cityBtnGroup-div">
 
                 </div>
             </div>
+        <!-- </div> -->
             <!-- City Result section -->
-            <div class="col-9" id="result-div">
+            <div class="col" id="result-div">
         <!-- Current Day div -->
                 <div id="current-div">
                     <h2 id="cityName"> </h2>
@@ -96,7 +92,7 @@
 
                 </div>
             </div>
-        </div>
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -110,7 +106,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
