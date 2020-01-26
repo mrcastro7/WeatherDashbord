@@ -3,8 +3,7 @@
 
 <head>
     <title>Weather Dashbord</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
@@ -13,26 +12,24 @@
 <body>
     <!-- Main container -->
     <div class="container-fluid" id="main-container">
-        <!-- <div class="row"> -->
             <!-- Search for City section -->
-            <div class="col-5" id="search-div">
-                <h4>What's The Weather In Your City:</h4>
+        <div class = "row justify-content-center header">
+            <div class="col-5 topDiv" id="search-div">
+                <h4 class = "text-center">What's The Weather In Your City</h4>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Enter a City" id="txtCity">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button" id="btnSearchCity"><i
-                                class="fa fa-search"></i></button>
+                        <button class="btn btn-primary" type="button" id="btnSearchCity"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
-                <div class="btn-group-horizontal" id="cityBtnGroup-div">
-
-                </div>
+                <div class="btn-group-horizontal boxtext" id="cityBtnGroup-div"></div>
             </div>
-        <!-- </div> -->
+        </div>
             <!-- City Result section -->
-            <div class="col" id="result-div">
+         <div class = "row justify-content-center">
+            <div class="col-6" id="result-div">
         <!-- Current Day div -->
-                <div id="current-div">
+                <div id="current-div" class='middleDiv'>
                     <h2 id="cityName"> </h2>
                     <hr>
                     <p id="current-temp"></p>
@@ -40,9 +37,13 @@
                     <p id="current-windSpeed"></p>
                     <p id="current-uv"></p>
                 </div>
+            </div>
+        </div>
                 <!-- Five Day Forecast div -->
+        <div class = "row justify-content-center bottomDiv">
+            <div class="col-10" id="result-div">
                 <div id="fiveDay-div">
-                    <h2>5 Day Forecast:</h2>
+                    <h2 class= "fiveDayForecast text-center"> 5 Day Forecast</h2>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -89,21 +90,14 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
     <script src="JS/script.js"></script>
