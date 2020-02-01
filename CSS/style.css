@@ -1,7 +1,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url('cloud.jpg');
+    background-image: url(cloud.jpg);
 }
 
 .header{
@@ -22,7 +22,7 @@ body{
 
 #search-div{
     background-color:lightseagreen;
-     height:auto;
+    height:auto;
 }
 
 #search-div h4{
@@ -36,7 +36,7 @@ body{
 
 #result-div{
 
-     height:auto;
+    height:auto;
 }
 
 #current-div{
